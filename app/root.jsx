@@ -6,7 +6,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-
+import Layout from "./components/layout";
 import styles from './styles/global.css'
 
 export const meta = () => ({
@@ -27,6 +27,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <Layout/>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
